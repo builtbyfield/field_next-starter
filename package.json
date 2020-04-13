@@ -1,0 +1,44 @@
+{
+  "name": "field_next-starter",
+  "private": true,
+  "description": "Opinionated Next.js starter by Field.",
+  "version": "1.0.0",
+  "author": "Field Creative Inc. <info@builtbyfield.com> (https://builtbyfield.com)",
+  "contributors": [
+    "Jesse McLean <jesse@builtbyfield.com>"
+  ],
+  "dependencies": {
+    "@emotion/babel-preset-css-prop": "^10.0.27",
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "@styled-system/css": "^5.1.5",
+    "@styled-system/should-forward-prop": "^5.1.5",
+    "emotion-theming": "^10.0.27",
+    "next": "9.3.4",
+    "polished": "^3.5.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "styled-system": "^5.1.5"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "next",
+    "react",
+    "emotion",
+    "styled-system",
+    "starter"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/builtbyfield/field_next-starter"
+  },
+  "bugs": {
+    "url": "https://github.com/builtbyfield/field_next-starter/issues"
+  }
+}
