@@ -64,6 +64,7 @@ const StyledBox = styled(Box)(
 function Column({
   children,
   columnComponent,
+  order,
   space = 0,
   spaceX,
   spaceY,
@@ -75,6 +76,7 @@ function Column({
       as={columnComponent}
       flex={!width && 1}
       flexShrink={width === "content" && 0}
+      order={order}
       width={width !== "content" ? width : null}
       minWidth={0}
       gutterX={spaceX ? spaceX : space}

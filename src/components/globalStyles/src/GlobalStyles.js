@@ -26,9 +26,12 @@ const GlobalStyles = () => (
       html: {
         fontFamily: "sans", // 1
         lineHeight: 1.5, // 2
+        textRendering: "optimizelegibility",
+        textSizeAdjust: "none",
         color: "text.0",
         WebkitFontSmoothing: "antialiased",
         MozOsxFontSmoothing: "grayscale",
+        WebkitTapHighlightColor: "transparent",
       },
 
       /**
@@ -59,6 +62,11 @@ const GlobalStyles = () => (
         borderWidth: 0, // 2
         borderStyle: "solid", // 2
         borderColor: "surface.border", // 2
+      },
+
+      "::-moz-focus-inner, ::-moz-focus-inner": {
+        padding: 0,
+        border: 0,
       },
 
       body: {
@@ -124,6 +132,7 @@ const GlobalStyles = () => (
        */
       "button,input,optgroup,select,textarea": {
         p: 0,
+        fontFamily: "inherit",
         lineHeight: "inherit",
         color: "inherit",
         appearance: "none",
@@ -136,6 +145,7 @@ const GlobalStyles = () => (
       button: {
         backgroundColor: "transparent",
         backgroundImage: "none",
+        m: 0,
         p: 0,
 
         /**
