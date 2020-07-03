@@ -32,8 +32,7 @@ function StylesPage() {
               href="https://emotion.sh/"
               target="_blank"
               rel="noopener noreferrer"
-              fontWeight={600}
-              color="brand.primary"
+              color="link"
             >
               Emotion
             </Box>
@@ -47,7 +46,7 @@ function StylesPage() {
             <Column width={{ _: 1 / 1, md: 1 / 2 }}>
               <VStack space="layout.1">
                 <Heading size={600}>Labeling</Heading>
-                <Paragraph size={400} maxWidth={960 / 2.5} color="text.1">
+                <Paragraph size={400} maxWidth={960 / 2.5} color="label.1">
                   Because Emotion abstracts away most traditional CSS classes,
                   we use HTML <code>data-*</code> attributes to label components
                   so that editors can easily identify what elements are what
@@ -59,8 +58,7 @@ function StylesPage() {
                     href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes"
                     target="_blank"
                     rel="noopener noreferrer"
-                    fontWeight={600}
-                    color="brand.primary"
+                    color="link"
                   >
                     little to no performance overhead
                   </Box>
@@ -71,15 +69,14 @@ function StylesPage() {
             <Column width={{ _: 1 / 1, md: 1 / 2 }}>
               <VStack space="layout.1">
                 <Heading size={600}>Extending</Heading>
-                <Paragraph size={400} maxWidth={960 / 2.5} color="text.1">
+                <Paragraph size={400} maxWidth={960 / 2.5} color="label.1">
                   To expand upon Emotion, we use{" "}
                   <Box
                     as="a"
                     href="https://styled-system.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    fontWeight={600}
-                    color="brand.primary"
+                    color="link"
                   >
                     styled-system
                   </Box>{" "}
@@ -106,7 +103,7 @@ function StylesPage() {
                     bg="tint.yellow"
                   >
                     <VStack space="layout.5">
-                      <Text size={300} color="text.1">
+                      <Text size={300} color="label.1">
                         How it works
                       </Text>
                       <Heading size={700}>Pages</Heading>
@@ -121,10 +118,10 @@ function StylesPage() {
                   as="a"
                   display="block"
                   p={{ _: "layout.1", md: "layout.3" }}
-                  bg="fill.1"
+                  bg="groupedBackground.0"
                 >
                   <VStack space="layout.5">
-                    <Text size={300} color="text.1">
+                    <Text size={300} color="label.1">
                       Index
                     </Text>
                     <Heading size={700}>Home</Heading>

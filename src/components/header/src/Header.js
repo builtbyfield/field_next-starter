@@ -5,7 +5,7 @@ import { Box, Flex, HStack, Icon, Text, Wrapper } from "components";
 function Header() {
   return (
     <Box data-component-id="header" as="header">
-      <Box height="4px" mb={{ _: "layout.3", md: "layout.4" }} bg="border.0" />
+      <Box height="4px" mb={{ _: "layout.3", md: "layout.4" }} bg="fill.0" />
       <Wrapper>
         <Flex justifyContent="space-between">
           <HStack align="center" space="layout.1">
@@ -17,7 +17,7 @@ function Header() {
                   display="block"
                   width={(44 / 17) * 16}
                   height={16}
-                  color="text.0"
+                  color="label.0"
                 >
                   <title>Field</title>
                   <path
@@ -27,7 +27,7 @@ function Header() {
                 </Box>
               </Box>
             </Link>
-            <Text size={500} color="text.1">
+            <Text size={500} color="label.1">
               <a href="mailto:info@builtbyfield.com">Contact</a>
             </Text>
           </HStack>
@@ -37,7 +37,7 @@ function Header() {
             rel="noopener noreferrer"
           >
             <HStack align="center" space="spacing.3">
-              <Icon symbol="github-fill" size={20} color="text.0" />
+              <Icon symbol="github-fill" size={20} color="label.0" />
               <Text size={500} fontWeight={600}>
                 GitHub
               </Text>

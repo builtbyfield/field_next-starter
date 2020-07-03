@@ -39,7 +39,7 @@ Paragraph.defaultProps = {
   "data-component-id": "typography.paragraph",
   display: "block",
   size: 500,
-  color: "text.0",
+  color: "label.0",
 };
 
 export default Paragraph;

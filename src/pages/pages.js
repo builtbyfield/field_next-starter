@@ -35,15 +35,14 @@ function PagesPage() {
             <Column width={{ _: 1 / 1, md: 1 / 2 }}>
               <VStack space="layout.1">
                 <Heading size={600}>Sources</Heading>
-                <Paragraph size={400} maxWidth={960 / 2.5} color="text.1">
+                <Paragraph size={400} maxWidth={960 / 2.5} color="label.1">
                   We can use any number of{" "}
                   <Box
                     as="a"
                     href="https://www.gatsbyjs.org/tutorial/part-five/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    fontWeight={600}
-                    color="brand.primary"
+                    color="link"
                   >
                     sources
                   </Box>{" "}
@@ -57,7 +56,7 @@ function PagesPage() {
             <Column width={{ _: 1 / 1, md: 1 / 2 }}>
               <VStack space="layout.1">
                 <Heading size={600}>Templates</Heading>
-                <Paragraph size={400} maxWidth={960 / 2.5} color="text.1">
+                <Paragraph size={400} maxWidth={960 / 2.5} color="label.1">
                   Generated pages uses templates to display their content.
                   Templates are assigned for each page type. A template can be
                   configured to display content from a source on the web or an
@@ -78,7 +77,7 @@ function PagesPage() {
                     bg="tint.yellow"
                   >
                     <VStack space="layout.5">
-                      <Text size={300} color="text.1">
+                      <Text size={300} color="label.1">
                         How it works
                       </Text>
                       <Heading size={700}>Styles</Heading>
@@ -93,10 +92,10 @@ function PagesPage() {
                   as="a"
                   display="block"
                   p={{ _: "layout.1", md: "layout.3" }}
-                  bg="fill.1"
+                  bg="groupedBackground.0"
                 >
                   <VStack space="layout.5">
-                    <Text size={300} color="text.1">
+                    <Text size={300} color="label.1">
                       Index
                     </Text>
                     <Heading size={700}>Home</Heading>

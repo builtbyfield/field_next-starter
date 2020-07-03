@@ -28,7 +28,7 @@ const GlobalStyles = () => (
         lineHeight: 1.5, // 2
         textRendering: "optimizelegibility",
         textSizeAdjust: "none",
-        color: "text.0",
+        color: "label.0",
         WebkitFontSmoothing: "antialiased",
         MozOsxFontSmoothing: "grayscale",
         WebkitTapHighlightColor: "transparent",
@@ -61,7 +61,7 @@ const GlobalStyles = () => (
         boxSizing: "border-box", // 1
         borderWidth: 0, // 2
         borderStyle: "solid", // 2
-        borderColor: "border.0", // 2
+        borderColor: "separator", // 2
       },
 
       "::-moz-focus-inner, ::-moz-focus-inner": {

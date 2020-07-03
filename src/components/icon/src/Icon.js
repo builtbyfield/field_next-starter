@@ -3,7 +3,7 @@ import { forwardRef } from "react";
 import { Box } from "components";
 
 const Icon = forwardRef(
-  ({ color = "text.0", size = 24, symbol = "", ...rest }, ref) => {
+  ({ color = "label.0", size = 24, symbol = "", ...rest }, ref) => {
     return (
       <Box
         data-component-id="icon"

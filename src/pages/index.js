@@ -3,13 +3,11 @@ import Link from "next/link";
 
 import {
   Box,
-  Button,
   Card,
   ColorMode,
   Column,
   Columns,
   Heading,
-  Inline,
   Paragraph,
   Text,
   VStack,
@@ -38,7 +36,7 @@ function IndexPage() {
                 <Heading size={600} ellipsis>
                   Who we are
                 </Heading>
-                <Paragraph size={400} maxWidth={960 / 2.5} color="text.1">
+                <Paragraph size={400} maxWidth={960 / 2.5} color="label.1">
                   Field is a Calgary-based technology and design consultancy
                   with an eye for design and mind for strategic execution. We
                   focus on making great new digital experiences and helping
@@ -49,8 +47,7 @@ function IndexPage() {
                     href="https://builtbyfield.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    fontWeight={600}
-                    color="brand.primary"
+                    color="link"
                   >
                     visit our website
                   </Box>
@@ -61,7 +58,7 @@ function IndexPage() {
             <Column width={{ _: 1 / 1, md: 1 / 2 }}>
               <VStack space="layout.1">
                 <Heading size={600}>What we do</Heading>
-                <Paragraph size={400} maxWidth={960 / 2.5} color="text.1">
+                <Paragraph size={400} maxWidth={960 / 2.5} color="label.1">
                   We see the opportunity to approach digital products as
                   experiences. A well built digital experience is the outcome of
                   equal parts design, engineering, and strategy, and isn't just
@@ -82,7 +79,7 @@ function IndexPage() {
                     bg="tint.yellow"
                   >
                     <VStack space="layout.5">
-                      <Text size={300} color="text.1">
+                      <Text size={300} color="label.1">
                         How it works
                       </Text>
                       <Heading size={700}>Pages</Heading>
@@ -99,7 +96,7 @@ function IndexPage() {
                     bg="tint.yellow"
                   >
                     <VStack space="layout.5">
-                      <Text size={300} color="text.1">
+                      <Text size={300} color="label.1">
                         How it works
                       </Text>
                       <Heading size={700}>Styles</Heading>

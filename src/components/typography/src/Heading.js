@@ -39,7 +39,7 @@ Heading.defaultProps = {
   "data-component-id": "typography.heading",
   display: "block",
   size: 700,
-  color: "text.0",
+  color: "label.0",
 };
 
 export default Heading;

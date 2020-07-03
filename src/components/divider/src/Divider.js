@@ -12,7 +12,7 @@ function HorizontalDivider({ width, color }) {
         position="absolute"
         width="100%"
         height="1px"
-        bg={color ? color : "border.0"}
+        bg={color ? color : "separator"}
         css={{ transform: "translateY(-50%)" }}
       />
     </Box>
@@ -31,7 +31,7 @@ function VerticalDivider({ height, color }) {
         position="absolute"
         width="1px"
         height="100%"
-        bg={color ? color : "border.0"}
+        bg={color ? color : "separator"}
         css={{ transform: "translateX(-50%)" }}
       />
     </Box>
