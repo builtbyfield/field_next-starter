@@ -17,7 +17,22 @@ const Text = styled("span", { shouldForwardProp })(
     prop: "size",
     scale: "text",
   }),
-  compose(COMMON, BORDER, TYPOGRAPHY, LAYOUT, POSITION, FLEX, GRID)
+  compose(COMMON, BORDER, TYPOGRAPHY, LAYOUT, POSITION, FLEX, GRID),
+  (props) => [
+    props.ellipsis && {
+      whiteSpace: "nowrap",
+      overflow: "hidden",
+      textOverflow: "ellipsis",
+    },
+    props.clamp > 0 && {
+      display: "-webkit-box",
+      overflow: "hidden",
+      textOverflow: "ellipsis",
+      WebkitBoxOrient: "vertical",
+      MozBoxOrient: "vertical",
+      WebkitLineClamp: props.clamp,
+    },
+  ]
 );
 
 Text.defaultProps = {

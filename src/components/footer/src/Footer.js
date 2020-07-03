@@ -8,7 +8,7 @@ function Footer() {
       mt="auto"
       pt={{ _: "layout.5", md: "layout.6" }}
     >
-      <Box height="4px" bg="brand.primary" />
+      <Box height="4px" bg="border.0" />
     </Box>
   );
 }

@@ -5,18 +5,12 @@
  * you may prefer to use standard ‘Card’ elements instead.
  */
 
-import React from "react";
+import { forwardRef } from "react";
+
 import { Box } from "components";
 
-const Card = React.forwardRef(({ ...props }, ref) => {
-  return (
-    <Box
-      data-component-id="card"
-      ref={ref}
-      bg="surface.background"
-      {...props}
-    />
-  );
+const Card = forwardRef(({ ...props }, ref) => {
+  return <Box data-component-id="card" ref={ref} {...props} />;
 });
 
 export default Card;

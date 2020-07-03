@@ -3,10 +3,13 @@ import Link from "next/link";
 
 import {
   Box,
+  Button,
   Card,
+  ColorMode,
   Column,
   Columns,
   Heading,
+  Inline,
   Paragraph,
   Text,
   VStack,
@@ -32,7 +35,9 @@ function IndexPage() {
           <Columns space="layout.3">
             <Column width={{ _: 1 / 1, md: 1 / 2 }}>
               <VStack space="layout.1">
-                <Heading size={600}>Who we are</Heading>
+                <Heading size={600} ellipsis>
+                  Who we are
+                </Heading>
                 <Paragraph size={400} maxWidth={960 / 2.5} color="text.1">
                   Field is a Calgary-based technology and design consultancy
                   with an eye for design and mind for strategic execution. We
@@ -66,42 +71,44 @@ function IndexPage() {
               </VStack>
             </Column>
           </Columns>
-          <Columns space="layout.1">
-            <Column width={{ _: 1 / 1, md: 1 / 2 }}>
-              <Link href="/pages" passHref>
-                <Card
-                  as="a"
-                  display="block"
-                  p={{ _: "layout.1", md: "layout.3" }}
-                  bg="brand.primary"
-                >
-                  <VStack space="layout.5">
-                    <Text size={300} color="text.1">
-                      How it works
-                    </Text>
-                    <Heading size={700}>Pages</Heading>
-                  </VStack>
-                </Card>
-              </Link>
-            </Column>
-            <Column width={{ _: 1 / 1, md: 1 / 2 }}>
-              <Link href="/styles" passHref>
-                <Card
-                  as="a"
-                  display="block"
-                  p={{ _: "layout.1", md: "layout.3" }}
-                  bg="brand.primary"
-                >
-                  <VStack space="layout.5">
-                    <Text size={300} color="text.1">
-                      How it works
-                    </Text>
-                    <Heading size={700}>Styles</Heading>
-                  </VStack>
-                </Card>
-              </Link>
-            </Column>
-          </Columns>
+          <ColorMode mode="light">
+            <Columns space="layout.1">
+              <Column width={{ _: 1 / 1, md: 1 / 2 }}>
+                <Link href="/pages" passHref>
+                  <Card
+                    as="a"
+                    display="block"
+                    p={{ _: "layout.1", md: "layout.3" }}
+                    bg="tint.yellow"
+                  >
+                    <VStack space="layout.5">
+                      <Text size={300} color="text.1">
+                        How it works
+                      </Text>
+                      <Heading size={700}>Pages</Heading>
+                    </VStack>
+                  </Card>
+                </Link>
+              </Column>
+              <Column width={{ _: 1 / 1, md: 1 / 2 }}>
+                <Link href="/styles" passHref>
+                  <Card
+                    as="a"
+                    display="block"
+                    p={{ _: "layout.1", md: "layout.3" }}
+                    bg="tint.yellow"
+                  >
+                    <VStack space="layout.5">
+                      <Text size={300} color="text.1">
+                        How it works
+                      </Text>
+                      <Heading size={700}>Styles</Heading>
+                    </VStack>
+                  </Card>
+                </Link>
+              </Column>
+            </Columns>
+          </ColorMode>
         </VStack>
       </Wrapper>
     </>

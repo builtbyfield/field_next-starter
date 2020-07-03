@@ -12,7 +12,7 @@
  * anything that might be larger than the aspect ratio.
  */
 
-import React from "react";
+import { forwardRef } from "react";
 import styled from "@emotion/styled";
 import { system } from "styled-system";
 
@@ -30,7 +30,7 @@ const StyledBox = styled(Box)(
   })
 );
 
-const AspectRatio = React.forwardRef(({ children, ratio, ...rest }, ref) => {
+const AspectRatio = forwardRef(({ children, ratio, ...rest }, ref) => {
   return (
     <StyledBox
       data-component-id="aspectRatio"

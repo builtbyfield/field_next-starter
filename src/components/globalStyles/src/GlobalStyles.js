@@ -61,7 +61,7 @@ const GlobalStyles = () => (
         boxSizing: "border-box", // 1
         borderWidth: 0, // 2
         borderStyle: "solid", // 2
-        borderColor: "surface.border", // 2
+        borderColor: "border.0", // 2
       },
 
       "::-moz-focus-inner, ::-moz-focus-inner": {
@@ -74,7 +74,7 @@ const GlobalStyles = () => (
         overflowX: "hidden",
         overflowY: "scroll",
         overscrollBehavior: "none",
-        bg: "surface.background",
+        bg: "background.0",
       },
 
       /**

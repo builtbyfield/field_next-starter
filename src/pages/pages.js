@@ -4,6 +4,7 @@ import Link from "next/link";
 import {
   Box,
   Card,
+  ColorMode,
   Column,
   Columns,
   Heading,
@@ -68,21 +69,23 @@ function PagesPage() {
           </Columns>
           <Columns space="layout.1">
             <Column width={{ _: 1 / 1, md: 1 / 2 }}>
-              <Link href="/styles" passHref>
-                <Card
-                  as="a"
-                  display="block"
-                  p={{ _: "layout.1", md: "layout.3" }}
-                  bg="brand.primary"
-                >
-                  <VStack space="layout.5">
-                    <Text size={300} color="text.1">
-                      How it works
-                    </Text>
-                    <Heading size={700}>Styles</Heading>
-                  </VStack>
-                </Card>
-              </Link>
+              <ColorMode mode="light">
+                <Link href="/styles" passHref>
+                  <Card
+                    as="a"
+                    display="block"
+                    p={{ _: "layout.1", md: "layout.3" }}
+                    bg="tint.yellow"
+                  >
+                    <VStack space="layout.5">
+                      <Text size={300} color="text.1">
+                        How it works
+                      </Text>
+                      <Heading size={700}>Styles</Heading>
+                    </VStack>
+                  </Card>
+                </Link>
+              </ColorMode>
             </Column>
             <Column width={{ _: 1 / 1, md: 1 / 2 }}>
               <Link href="/" passHref>
@@ -90,7 +93,7 @@ function PagesPage() {
                   as="a"
                   display="block"
                   p={{ _: "layout.1", md: "layout.3" }}
-                  bg="surface.wash"
+                  bg="fill.1"
                 >
                   <VStack space="layout.5">
                     <Text size={300} color="text.1">

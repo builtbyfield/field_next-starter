@@ -1,3 +1,5 @@
+import "remixicon/fonts/remixicon.css";
+
 import { Layout } from "components";
 
 function CustomApp({ Component, pageProps }) {
