@@ -94,14 +94,16 @@ const Columns = forwardRef(
     const columnComponent = isList ? "li" : "div";
 
     // Pass properties down to children
-    const childrenWithProps = React.Children.map(children, (child) =>
-      React.cloneElement(child, {
-        columnComponent: columnComponent,
-        space: space,
-        spaceX: spaceX,
-        spaceY: spaceY,
-      })
-    );
+    const childrenWithProps = React.Children.map(children, (child) => {
+      if (child) {
+        return React.cloneElement(child, {
+          columnComponent: columnComponent,
+          space: space,
+          spaceX: spaceX,
+          spaceY: spaceY,
+        });
+      }
+    });
 
     return (
       <StyledBox
