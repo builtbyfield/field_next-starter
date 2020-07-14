@@ -2,7 +2,6 @@ import Head from "next/head";
 import Link from "next/link";
 
 import {
-  Box,
   Card,
   ColorMode,
   Column,
@@ -10,6 +9,7 @@ import {
   Heading,
   Paragraph,
   Text,
+  TextLink,
   VStack,
   Wrapper,
 } from "components";
@@ -42,15 +42,14 @@ function IndexPage() {
                   focus on making great new digital experiences and helping
                   existing companies refocus on digital. For more information,
                   please{" "}
-                  <Box
+                  <TextLink
                     as="a"
                     href="https://builtbyfield.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    color="link"
                   >
                     visit our website
-                  </Box>
+                  </TextLink>
                   .
                 </Paragraph>
               </VStack>

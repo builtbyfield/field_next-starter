@@ -10,7 +10,7 @@ function Header() {
         <Flex justifyContent="space-between">
           <HStack align="center" space="layout.1">
             <Link href="/" passHref>
-              <Box as="a" mt="-2px">
+              <Box as="a">
                 <Box
                   as="svg"
                   viewBox="0 0 44 17"

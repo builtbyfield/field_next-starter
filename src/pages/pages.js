@@ -2,7 +2,6 @@ import Head from "next/head";
 import Link from "next/link";
 
 import {
-  Box,
   Card,
   ColorMode,
   Column,
@@ -10,6 +9,7 @@ import {
   Heading,
   Paragraph,
   Text,
+  TextLink,
   VStack,
   Wrapper,
 } from "components";
@@ -24,7 +24,7 @@ function PagesPage() {
 
       <Wrapper pt={{ _: "layout.5", md: "layout.6" }}>
         <VStack space={{ _: "layout.5", md: "layout.6" }} dividers={true}>
-          <Heading size={800}>Pages</Heading>
+          <Heading size={900}>Pages</Heading>
           <Paragraph size={600} maxWidth={960 / 1.25}>
             Pages are very simple to create. Any JavaScript file with an export
             should create a new page within Next.js. Hot tip: use a underscore
@@ -37,15 +37,14 @@ function PagesPage() {
                 <Heading size={600}>Sources</Heading>
                 <Paragraph size={400} maxWidth={960 / 2.5} color="label.1">
                   We can use any number of{" "}
-                  <Box
+                  <TextLink
                     as="a"
                     href="https://www.gatsbyjs.org/tutorial/part-five/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    color="link"
                   >
                     sources
-                  </Box>{" "}
+                  </TextLink>{" "}
                   to grab content from all over the web and use that content to
                   create new pages. Examples of sources might be a content
                   management system (CMS) like Wordpress or Prismic, or more non

@@ -2,7 +2,6 @@ import Head from "next/head";
 import Link from "next/link";
 
 import {
-  Box,
   Card,
   ColorMode,
   Column,
@@ -10,6 +9,7 @@ import {
   Heading,
   Paragraph,
   Text,
+  TextLink,
   VStack,
   Wrapper,
 } from "components";
@@ -24,18 +24,17 @@ function StylesPage() {
 
       <Wrapper pt={{ _: "layout.5", md: "layout.6" }}>
         <VStack space={{ _: "layout.5", md: "layout.6" }} dividers={true}>
-          <Heading size={800}>Styles</Heading>
+          <Heading size={900}>Styles</Heading>
           <Paragraph size={600} maxWidth={960 / 1.25}>
             Our method for styling elements in this project uses{" "}
-            <Box
+            <TextLink
               as="a"
               href="https://emotion.sh/"
               target="_blank"
               rel="noopener noreferrer"
-              color="link"
             >
               Emotion
-            </Box>
+            </TextLink>
             , a library designed for writing css styles with JavaScript. It
             provides powerful and predictable style composition in addition to a
             great developer experience with features such as source maps,
@@ -53,15 +52,14 @@ function StylesPage() {
                   components in the DOM. We do this by assigning components{" "}
                   <code>data-component-id="componentName"</code> attributes.
                   These are great for element-associated metadata and have{" "}
-                  <Box
+                  <TextLink
                     as="a"
                     href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes"
                     target="_blank"
                     rel="noopener noreferrer"
-                    color="link"
                   >
                     little to no performance overhead
-                  </Box>
+                  </TextLink>
                   .
                 </Paragraph>
               </VStack>
@@ -71,15 +69,14 @@ function StylesPage() {
                 <Heading size={600}>Extending</Heading>
                 <Paragraph size={400} maxWidth={960 / 2.5} color="label.1">
                   To expand upon Emotion, we use{" "}
-                  <Box
+                  <TextLink
                     as="a"
                     href="https://styled-system.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    color="link"
                   >
                     styled-system
-                  </Box>{" "}
+                  </TextLink>{" "}
                   which provides us with "style props for rapid UI development."
                   We're able to assign most of the typically styles we use to a
                   component called <code>Box</code> which we can then use as a

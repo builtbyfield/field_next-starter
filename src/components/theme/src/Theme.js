@@ -12,19 +12,22 @@
  */
 
 // Media query breakpoints
-import breakpoints from "./breakpoints"
+import breakpoints from "./breakpoints";
 
 // Color
-import colors from "./colors"
+import colors from "./colors";
 
 // Spacing
-import space from "./space"
+import space from "./space";
+
+// Radii
+import radii from "./radii";
 
 // Typography
-import fonts from "./fonts"
-import headings from "./headings"
-import text from "./text"
-import paragraph from "./paragraph"
+import fonts from "./fonts";
+import headings from "./headings";
+import text from "./text";
+import paragraph from "./paragraph";
 
 export default {
   breakpoints,
@@ -32,6 +35,7 @@ export default {
   fonts,
   headings,
   paragraph,
+  radii,
   space,
   text,
-}
+};

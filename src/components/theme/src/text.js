@@ -1,19 +1,80 @@
 export default {
   "500": {
-    fontSize: "16px",
+    /**
+     * Capsize specs
+     * Font: Inter
+     * Snap to grid: 4
+     * Cap Height: 12
+     * Line height style: Leading
+     * Leading: 20
+     */
+    fontSize: "16.5px",
     fontWeight: 400,
-    lineHeight: "22px",
+    lineHeight: "20px",
+    padding: "0.05px 0",
+    ":before": {
+      content: "''",
+      display: "block",
+      height: 0,
+      marginTop: "-0.24545454545454543em",
+    },
+    ":after": {
+      content: "''",
+      display: "block",
+      height: 0,
+      marginBottom: "-0.24545454545454545em",
+    },
   },
   "400": {
-    fontSize: "14px",
-    fontWeight: 400,
-    lineHeight: "18px",
-    letterSpacing: "0.16px",
-  },
-  "300": {
-    fontSize: "12px",
+    /**
+     * Capsize specs
+     * Font: Inter
+     * Snap to grid: 4
+     * Cap Height: 10
+     * Line height style: Leading
+     * Leading: 16
+     */
+    fontSize: "13.75px",
     fontWeight: 400,
     lineHeight: "16px",
-    letterSpacing: "0.32px",
+    padding: "0.05px 0",
+    ":before": {
+      content: "''",
+      display: "block",
+      height: 0,
+      marginTop: "-0.2218181818181818em",
+    },
+    ":after": {
+      content: "''",
+      display: "block",
+      height: 0,
+      marginBottom: "-0.22181818181818183em",
+    },
   },
-}
+  "300": {
+    /**
+     * Capsize specs
+     * Font: Inter
+     * Snap to grid: 4
+     * Cap Height: 8
+     * Line height style: Leading
+     * Leading: 12
+     */
+    fontSize: "11px",
+    fontWeight: 400,
+    lineHeight: "12px",
+    padding: "0.05px 0",
+    ":before": {
+      content: "''",
+      display: "block",
+      height: 0,
+      marginTop: "-0.18636363636363634em",
+    },
+    ":after": {
+      content: "''",
+      display: "block",
+      height: 0,
+      marginBottom: "-0.18636363636363637em",
+    },
+  },
+};

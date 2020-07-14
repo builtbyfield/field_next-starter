@@ -2,10 +2,10 @@
  * Button
  */
 
-import { forwardRef, useState } from "react";
+import { useState, forwardRef } from "react";
 import { useTheme } from "emotion-theming";
 
-import { Box, Icon, Text } from "components";
+import { Box, Icon, Spinner, Text } from "components";
 
 import buttonStyles from "./utils/buttonStyles";
 
@@ -19,7 +19,9 @@ const Button = forwardRef(
       height = 40,
       iconBefore,
       iconAfter,
+      loading,
       round,
+      theme,
       ...rest
     },
     ref
@@ -48,12 +50,11 @@ const Button = forwardRef(
     const TEXT_SIZE = getTextSizeForControlHeight(height);
 
     return (
-      <Text
+      <Box
         data-component-id="button"
         ref={ref}
         as={as}
         className={isHovering === true ? "isHovering" : undefined}
-        size={TEXT_SIZE}
         position="relative"
         display="inline-flex"
         justifyContent="center"
@@ -61,35 +62,63 @@ const Button = forwardRef(
         flexWrap="nowrap"
         height={height + "px"}
         px={PADDING}
-        borderRadius={round ? 9999 : 5}
+        borderRadius={round ? "round" : "corners.2"}
         overflow="hidden"
-        fontWeight={600}
-        lineHeight={height + "px"}
+        // lineHeight={height + "px"}
         css={{
-          ...buttonStyles(appearance, intent, useTheme()),
+          ...buttonStyles(appearance, intent, theme ? theme : useTheme()),
           userSelect: "none",
           whiteSpace: "nowrap",
           cursor: "pointer",
           "&:focus": { outline: 0 },
+          "&:disabled": { opacity: 0.5, pointerEvents: "none" },
         }}
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
         {...rest}
       >
         {iconBefore && (
-          <Box data-component-id="button.iconBefore" as="span" pr="spacing.2">
+          <Box
+            data-component-id="button.iconBefore"
+            as="span"
+            pr="spacing.2"
+            style={{ opacity: loading && 0 }}
+          >
             <Icon symbol={iconBefore} size={ICON_SIZE} color="currentColor" />
           </Box>
         )}
-        <Box data-component-id="button.content" as="span">
+        <Text
+          data-component-id="button.content"
+          as="span"
+          size={TEXT_SIZE}
+          fontWeight={600}
+          color="currentColor"
+          style={{ opacity: loading && 0 }}
+        >
           {children}
-        </Box>
+        </Text>
         {iconAfter && (
-          <Box data-component-id="button.iconAfter" as="span" pl="spacing.2">
+          <Box
+            data-component-id="button.iconAfter"
+            as="span"
+            pl="spacing.2"
+            style={{ opacity: loading && 0 }}
+          >
             <Icon symbol={iconAfter} size={ICON_SIZE} color="currentColor" />
           </Box>
         )}
-      </Text>
+        {loading && (
+          <Box
+            data-component-id="button.spinner"
+            position="absolute"
+            top="50%"
+            left="50%"
+            css={{ transform: "translate(-50%, -50%)" }}
+          >
+            <Spinner size={height / 2} color="currentColor" />
+          </Box>
+        )}
+      </Box>
     );
   }
 );

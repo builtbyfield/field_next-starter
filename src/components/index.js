@@ -15,6 +15,7 @@ export { Icon } from "./icon";
 export { Inline } from "./inline";
 export { Layout } from "./layout";
 export { Spacer } from "./spacer";
+export { Spinner } from "./spinner";
 export { HStack, VStack } from "./stacks";
 export {
   COMMON,
@@ -25,6 +26,7 @@ export {
   FLEX,
   GRID,
 } from "./systemProps";
+export { TextLink } from "./textLink";
 export { Theme } from "./theme";
 export { Heading, Paragraph, Text } from "./typography";
 export { Wrapper } from "./wrapper";

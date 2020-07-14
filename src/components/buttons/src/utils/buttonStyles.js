@@ -29,12 +29,12 @@ function buttonStyles(appearance, intent, theme) {
       if (intent === "default")
         return {
           color: theme.colors.label[0],
-          backgroundColor: theme.colors.background[2],
+          backgroundColor: theme.colors.groupedBackground[1],
           boxShadow:
             "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 0 1px 0 rgba(0, 0, 0, 0.1)",
           transition: "background-color 200ms ease-out",
           '&.isHovering, &:focus, &:focus-within, &[aria-expanded="true"]': {
-            backgroundColor: theme.colors.background[1],
+            backgroundColor: theme.colors.groupedBackground[0],
           },
         };
       else
@@ -61,18 +61,18 @@ function buttonStyles(appearance, intent, theme) {
         backgroundColor: theme.colors.fill[3],
         transition: "background-color 200ms ease-out",
         '&.isHovering, &:focus, &:focus-within, &[aria-expanded="true"]': {
-          backgroundColor: theme.colors.fill[2],
+          backgroundColor: theme.colors.fill[1],
         },
       };
     default:
       return {
         color: intents[intent].base,
-        backgroundColor: theme.colors.clear,
+        backgroundColor: "transparent",
         borderWidth: 1,
-        borderColor: theme.colors.fill[0],
+        borderColor: theme.colors.fill[1],
         transition: "background-color 200ms ease-out",
         '&.isHovering, &:focus, &:focus-within, &[aria-expanded="true"]': {
-          backgroundColor: theme.colors.fill[3],
+          backgroundColor: theme.colors.fill[0],
         },
       };
   }
