@@ -1,11 +1,15 @@
 const path = require("path");
 
 const {
-  Setup,
-  DevTools,
-  Container,
-  ColorTokens,
   ApplyColorVariables,
+  ColorTokens,
+  Container,
+  DevTools,
+  FontFamilies,
+  GridGap,
+  RatioBox,
+  Setup,
+  TextStyles,
 } = require("./plugins");
 const theme = require("./theme");
 
@@ -17,7 +21,27 @@ module.exports = {
   ],
   // purge: [path.join(__dirname, "/src/**/*.{js,ts,jsx,tsx}")],
   darkMode: false, // or 'media' or 'class'
+  corePlugins: {
+    container: false,
+  },
+  plugins: [
+    ColorTokens,
+    Container,
+    DevTools,
+    FontFamilies,
+    GridGap,
+    RatioBox,
+    Setup,
+    TextStyles,
+  ],
   theme: {
+    screens: theme.breakpoints,
+    mainColWidths: theme.container,
+    innerGutters: theme.gutters.inner,
+    outerGutters: theme.gutters.outer,
+    columnCount: theme.columns,
+    fontFamilies: theme.fontFamilies,
+    textStyles: theme.textStyles,
     colors: theme.color.tokens,
     backgroundColor: ApplyColorVariables(
       theme.color.tokens,
@@ -28,6 +52,7 @@ module.exports = {
       theme.color.borderColor
     ),
     textColor: ApplyColorVariables(theme.color.tokens, theme.color.textColor),
+    ratios: theme.ratios,
     extend: {
       spacing: {
         "safe-top": "env(safe-area-inset-top)",
@@ -37,8 +62,4 @@ module.exports = {
       },
     },
   },
-  corePlugins: {
-    container: false,
-  },
-  plugins: [Setup, Container, ColorTokens, DevTools],
 };

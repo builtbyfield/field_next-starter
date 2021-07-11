@@ -1,3 +1,5 @@
+const path = require("path");
+
 const {
   ApplyColorVariables,
   ColorTokens,
@@ -14,8 +16,8 @@ const theme = require("./src/tailwind/theme");
 module.exports = {
   mode: "jit",
   purge: [
-    "./src/components/**/*.{js,ts,jsx,tsx}",
-    "./src/pages/**/*.{js,ts,jsx,tsx}",
+    path.join(__dirname, "/src/components/**/*.{js,ts,jsx,tsx}"),
+    path.join(__dirname, "/src/pages/**/*.{js,ts,jsx,tsx}"),
   ],
   darkMode: false, // or 'media' or 'class'
   corePlugins: {
