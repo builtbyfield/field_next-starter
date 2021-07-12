@@ -1,0 +1,8 @@
+/* Default breakpoints */
+
+@value xs: (max-width: 0px);
+@value sm: (min-width: 544px);
+@value md: (min-width: 650px);
+@value lg: (min-width: 990px);
+@value xl: (min-width: 1300px);
+@value 2xl: (min-width: 1520px);

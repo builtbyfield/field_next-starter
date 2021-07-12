@@ -13,6 +13,6 @@ module.exports = {
     md: "40px",
     lg: "40px",
     xl: "40px",
-    xxl: "auto",
+    xxl: "0px",
   },
 };

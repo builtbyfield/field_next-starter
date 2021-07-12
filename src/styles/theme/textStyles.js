@@ -1,7 +1,7 @@
 module.exports = {
   h1: {
     xs: {
-      fontFamily: "var(--sans)",
+      fontFamily: "var(--font-sans)",
       fontSize: 32,
       fontWeight: 500,
       lineHeight: 1.2,
@@ -16,7 +16,7 @@ module.exports = {
   },
   h2: {
     xs: {
-      fontFamily: "var(--sans)",
+      fontFamily: "var(--font-sans)",
       fontSize: 28,
       fontWeight: 500,
       lineHeight: 1.2,
@@ -31,7 +31,7 @@ module.exports = {
   },
   h3: {
     xs: {
-      fontFamily: "var(--sans)",
+      fontFamily: "var(--font-sans)",
       fontSize: 18,
       fontWeight: 500,
       lineHeight: 1.2,
@@ -46,7 +46,7 @@ module.exports = {
   },
   h4: {
     xs: {
-      fontFamily: "var(--sans)",
+      fontFamily: "var(--font-sans)",
       fontSize: 16,
       fontWeight: 500,
       lineHeight: 1.2,
@@ -58,7 +58,7 @@ module.exports = {
   },
   body: {
     xs: {
-      fontFamily: "var(--sans)",
+      fontFamily: "var(--font-sans)",
       fontSize: 14,
       fontWeight: 600,
       lineHeight: 1.7,
@@ -69,7 +69,7 @@ module.exports = {
   },
   quote: {
     xs: {
-      fontFamily: "var(--serif)",
+      fontFamily: "var(--font-serif)",
       fontSize: 14,
       fontWeight: 400,
       fontStyle: "italic",
@@ -84,7 +84,7 @@ module.exports = {
   },
   caption: {
     xs: {
-      fontFamily: "var(--sans)",
+      fontFamily: "var(--font-sans)",
       fontSize: 12,
       fontWeight: 400,
       lineHeight: 1.2,

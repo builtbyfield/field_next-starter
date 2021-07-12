@@ -7,7 +7,7 @@ module.exports = plugin(function ({ addBase, theme }) {
     const [name, family] = a;
     return {
       ":root": {
-        [`--${name}`]: family,
+        [`--font-${name}`]: family,
       },
     };
   });
