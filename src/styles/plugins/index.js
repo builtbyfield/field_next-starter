@@ -1,21 +1,17 @@
-const ApplyColorVariables = require("./ApplyColorVariables");
-const ColorTokens = require("./ColorTokens");
+const ColorVariable = require("./ColorVariable");
 const Container = require("./Container");
 const DevTools = require("./DevTools");
-const FontFamilies = require("./FontFamilies");
-const GridGap = require("./GridGap");
-const RatioBox = require("./RatioBox");
-const Setup = require("./Setup");
-const TextStyles = require("./TextStyles");
+const GenerateScale = require("./GenerateScale");
+const SetupShared = require("./SetupShared");
+const SetupThemes = require("./SetupThemes");
+const Typography = require("./Typography");
 
 module.exports = {
-  ApplyColorVariables,
-  ColorTokens,
+  ColorVariable,
   Container,
   DevTools,
-  FontFamilies,
-  GridGap,
-  RatioBox,
-  Setup,
-  TextStyles,
+  GenerateScale,
+  SetupShared,
+  SetupThemes,
+  Typography,
 };

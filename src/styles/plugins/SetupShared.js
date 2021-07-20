@@ -1,8 +1,6 @@
-// require("dotenv").config();
-
 module.exports = function ({ addBase, theme }) {
   const breakpoints = theme("screens");
-  const mainColWidths = theme("mainColWidths", {});
+  const container = theme("container", {});
   const outerGutters = theme("outerGutters", {});
   const innerGutters = theme("innerGutters", {});
   const columnCount = theme("columnCount", {});
@@ -13,8 +11,8 @@ module.exports = function ({ addBase, theme }) {
     let styles = {
       ":root": {
         "--breakpoint": `${JSON.stringify(bp + "")}`,
-        "--container-width": parseInt(mainColWidths[bp], 10)
-          ? mainColWidths[bp]
+        "--container-width": parseInt(container[bp], 10)
+          ? container[bp]
           : "unset",
         "--inner-gutter": innerGutters[bp],
         "--outer-gutter": outerGutters[bp],
