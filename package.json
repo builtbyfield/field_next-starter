@@ -1,48 +1,32 @@
 {
-  "name": "field_next-starter",
+  "name": "next-starter",
+  "version": "0.1.0",
   "private": true,
-  "description": "Opinionated Next.js starter by Field.",
-  "version": "1.0.0",
-  "author": "Field Creative Inc. <info@builtbyfield.com> (https://builtbyfield.com)",
   "contributors": [
-    "Jesse McLean <jesse@builtbyfield.com>"
+    "Jesse McLean <jesse@builtbyfield.com> (https://builtbyfield.com)"
   ],
-  "dependencies": {
-    "@emotion/babel-preset-css-prop": "^10.0.27",
-    "@emotion/core": "^10.0.28",
-    "@emotion/styled": "^10.0.27",
-    "@styled-system/css": "^5.1.5",
-    "@styled-system/should-forward-prop": "^5.1.5",
-    "emotion-theming": "^10.0.27",
-    "lodash.get": "^4.4.2",
-    "lodash.merge": "^4.6.2",
-    "next": "^9.4.0",
-    "polished": "^3.5.1",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "remixicon": "^2.5.0",
-    "styled-system": "^5.1.5"
-  },
-  "devDependencies": {},
-  "keywords": [
-    "next",
-    "react",
-    "emotion",
-    "styled-system",
-    "starter"
-  ],
-  "license": "MIT",
   "scripts": {
     "dev": "next dev",
-    "develop": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint",
+    "generate": "plop"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/builtbyfield/field_next-starter"
+  "dependencies": {
+    "next": "11.0.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   },
-  "bugs": {
-    "url": "https://github.com/builtbyfield/field_next-starter/issues"
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "color": "^4.0.0",
+    "eslint": "7.31.0",
+    "eslint-config-next": "11.0.1",
+    "plop": "^2.7.4",
+    "postcss": "^8.3.5",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-fluid": "^1.4.1",
+    "postcss-import": "^14.0.2",
+    "tailwindcss": "^2.2.4"
   }
 }
