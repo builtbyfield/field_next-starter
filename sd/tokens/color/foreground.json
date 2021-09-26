@@ -1,0 +1,18 @@
+{
+  "color": {
+    "foreground": {
+      "primary": {
+        "value": "{color.gray.12.value}",
+        "comment": "Main color for text"
+      },
+      "secondary": {
+        "value": "{color.gray.11.value}",
+        "comment": "Alt color for text"
+      },
+      "tertiary": {
+        "value": "{color.gray.10.value}",
+        "comment": "Very faded color for text"
+      }
+    }
+  }
+}

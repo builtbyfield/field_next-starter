@@ -1,0 +1,14 @@
+{
+  "name": "@next-starter/ds",
+  "version": "0.1.0",
+  "private": true,
+  "contributors": [
+    "Jesse McLean <jesse@builtbyfield.com> (https://builtbyfield.com)"
+  ],
+  "scripts": {
+    "build": "style-dictionary build"
+  },
+  "devDependencies": {
+    "style-dictionary": "^3.0.2"
+  }
+}

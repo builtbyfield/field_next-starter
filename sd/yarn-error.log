@@ -1,0 +1,32 @@
+Arguments: 
+  /Users/jessemclean/.asdf/installs/nodejs/16.9.1/bin/node /Users/jessemclean/.asdf/installs/nodejs/16.9.1/.npm/bin/yarn add -D style-dictionary
+
+PATH: 
+  /Users/jessemclean/.asdf/plugins/nodejs/shims:/Users/jessemclean/.asdf/installs/nodejs/16.9.1/.npm/bin:/Users/jessemclean/.asdf/installs/nodejs/16.9.1/bin:/Users/jessemclean/.asdf/shims:/Users/jessemclean/.asdf/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/homebrew/bin:/opt/homebrew/sbin
+
+Yarn version: 
+  1.22.11
+
+Node version: 
+  16.9.1
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  TypeError: Cannot read properties of undefined (reading 'manifest')
+      at _loop (/Users/jessemclean/.asdf/installs/nodejs/16.9.1/.npm/lib/node_modules/yarn/lib/cli.js:6973:102)
+      at _loop.next (<anonymous>)
+      at Add.<anonymous> (/Users/jessemclean/.asdf/installs/nodejs/16.9.1/.npm/lib/node_modules/yarn/lib/cli.js:7031:27)
+      at Generator.next (<anonymous>)
+      at step (/Users/jessemclean/.asdf/installs/nodejs/16.9.1/.npm/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /Users/jessemclean/.asdf/installs/nodejs/16.9.1/.npm/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {}
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

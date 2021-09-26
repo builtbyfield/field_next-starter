@@ -1,0 +1,18 @@
+{
+  "color": {
+    "background": {
+      "primary": {
+        "value": "{color.white.value}",
+        "comment": "Root level app background color"
+      },
+      "secondary": {
+        "value": "{color.gray.1.value}",
+        "comment": "First layer background"
+      },
+      "tertiary": {
+        "value": "{color.gray.2.value}",
+        "comment": "Second layer background"
+      }
+    }
+  }
+}

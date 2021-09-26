@@ -1,0 +1,22 @@
+{
+  "size": {
+    "font": {
+      "small": {
+        "value": 0.75,
+        "comment": "The small size of the font"
+      },
+      "medium": {
+        "value": 1,
+        "comment": "The medium size of the font"
+      },
+      "large": {
+        "value": 2,
+        "comment": "The large size of the font"
+      },
+      "base": {
+        "value": "{size.font.medium.value}",
+        "comment": "The base size of the font"
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "color": {
+    "gray": {
+      "1": {
+        "value": "#fcfcfc",
+        "comment": "App background"
+      },
+      "2": {
+        "value": "#f8f8f8",
+        "comment": "Subtle background"
+      },
+      "3": {
+        "value": "#f3f3f3",
+        "comment": "UI element background"
+      },
+      "4": {
+        "value": "#ededed",
+        "comment": "Hovered UI element background"
+      },
+      "5": {
+        "value": "#e5e5e5",
+        "comment": "Active / Selected UI element background"
+      },
+      "6": {
+        "value": "#e2e2e2",
+        "comment": "Subtle borders and separators"
+      },
+      "7": {
+        "value": "#dbdbdb",
+        "comment": "UI element border and focus rings"
+      },
+      "8": {
+        "value": "#c7c7c7",
+        "comment": "Hovered UI element border"
+      },
+      "9": {
+        "value": "#8f8f8f",
+        "comment": "Solid backgrounds"
+      },
+      "10": {
+        "value": "#858585",
+        "comment": "Hovered solid backgrounds"
+      },
+      "11": {
+        "value": "#6f6f6f",
+        "comment": "Low-contrast text"
+      },
+      "12": {
+        "value": "#181818",
+        "comment": "High-contrast text"
+      }
+    }
+  }
+}

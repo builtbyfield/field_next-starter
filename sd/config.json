@@ -1,0 +1,41 @@
+{
+  "source": ["tokens/**/*.json"],
+  "platforms": {
+    "css": {
+      "transformGroup": "css",
+      "buildPath": "build/css/",
+      "files": [
+        {
+          "destination": "variables.css",
+          "format": "css/variables",
+          "options": {
+            "outputReferences": true
+          }
+        }
+      ]
+    },
+    "scss": {
+      "transformGroup": "scss",
+      "buildPath": "build/scss/",
+      "files": [
+        {
+          "destination": "variables.scss",
+          "format": "scss/variables",
+          "options": {
+            "outputReferences": true
+          }
+        }
+      ]
+    },
+    "tailwind": {
+      "transformGroup": "js",
+      "buildPath": "build/tailwind/",
+      "files": [
+        {
+          "destination": "variables.json",
+          "format": "json/nested"
+        }
+      ]
+    }
+  }
+}

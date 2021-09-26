@@ -1,0 +1,49 @@
+{
+  "size": {
+    "space": {
+      "0": {
+        "value": 0
+      },
+      "px": {
+        "value": 0.0625,
+        "comment": "Equal to 1px"
+      },
+      "2xs": {
+        "value": 0.25
+      },
+      "xs": {
+        "value": 0.5
+      },
+      "sm": {
+        "value": 0.75
+      },
+      "base": {
+        "value": 1
+      },
+      "md": {
+        "value": 1.5
+      },
+      "lg": {
+        "value": 2
+      },
+      "xl": {
+        "value": 3
+      },
+      "2xl": {
+        "value": 4
+      },
+      "3xl": {
+        "value": 6
+      },
+      "4xl": {
+        "value": 8
+      },
+      "5xl": {
+        "value": 12
+      },
+      "6xl": {
+        "value": 16
+      }
+    }
+  }
+}
