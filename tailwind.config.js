@@ -1,52 +1,36 @@
-const {
-  ColorVariable,
-  GenerateScale,
-  Container,
-  DevTools,
-  SetupShared,
-  SetupThemes,
-  Typography,
-} = require("./src/styles/plugins");
-const theme = require("./src/styles/theme");
-
 module.exports = {
   mode: "jit",
-  purge: ["./src/**/*.{js,jsx,ts,tsx,html}"],
+  purge: [
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./views/**/*.{js,ts,jsx,tsx}",
+  ],
   darkMode: false,
-  plugins: [DevTools, SetupShared, SetupThemes, Container, Typography],
-  corePlugins: { container: false },
   theme: {
-    screens: theme.breakpoints,
-    container: theme.container,
-    innerGutters: theme.gutters.inner,
-    outerGutters: theme.gutters.outer,
-    columnCount: theme.columns,
-    fontFamilies: theme.fontFamilies,
-    textStyles: theme.textStyles,
-    colors: {
-      // Base
-      transparent: "var(--transparent)",
-      current: "var(--current)",
-      black: ColorVariable("black"),
-      white: ColorVariable("white"),
-      // Scales
-      gray: GenerateScale("gray", 12),
+    myPlugin: {
+      prefix: "--prefix",
+      themes: {
+        ".light": {
+          colors: {
+            primary: "#fff000", // custom color instead of default color
+          },
+          textColor: {
+            primary: "#000000",
+          },
+          spacing: {
+            2: "8px",
+          },
+        },
+        ".dark": {
+          colors: {
+            primary: "#666666", // custom color instead of default color
+          },
+          spacing: {
+            2: "8px",
+          },
+        },
+      },
     },
-    backgroundColor: (theme) => ({
-      ...theme("colors"),
-      app: ColorVariable("background-app"),
-    }),
-    borderColor: (theme) => ({
-      ...theme("colors"),
-      DEFAULT: ColorVariable("border-subtle"),
-      subtle: ColorVariable("border-subtle"),
-      strong: ColorVariable("border-strong"),
-    }),
-    textColor: (theme) => ({
-      ...theme("colors"),
-      primary: ColorVariable("text-primary"),
-      secondary: ColorVariable("text-secondary"),
-    }),
     extend: {
       spacing: {
         "safe-top": "env(safe-area-inset-top)",
@@ -56,11 +40,5 @@ module.exports = {
       },
     },
   },
-  themes: {
-    light: {
-      colors: {
-        ...theme.lightTheme,
-      },
-    },
-  },
+  plugins: [require("./tailwind/myPlugin")],
 };
